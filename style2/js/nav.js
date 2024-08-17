@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const navContainer = document.getElementById('nav-container');
     
-    fetch('./components/nav.html')
+    fetch('components/nav.html')
         .then(response => response.text())
         .then(data => {
             navContainer.innerHTML = data;
