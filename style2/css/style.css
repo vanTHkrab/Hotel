@@ -1,3 +1,9 @@
+*{
+    font-family: "Kanit", sans-serif;
+}
+
+
+
 /********** Template CSS **********/
 :root {
     --primary: #86B817;
@@ -22,12 +28,16 @@
     z-index: 99;
 }
 
-
+/** Fonts **/
+h1{
+    font-family: "Luxurious Roman", serif;
+}
 
 
 /*** Button ***/
 .btn {
     font-family: 'Nunito', sans-serif;
+    
     font-weight: 600;
     transition: .5s;
 }
@@ -159,10 +169,11 @@
 
 /*** Hero Header ***/
 .hero-header {
-    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/bg-hero.jpg);
+    background: linear-gradient(rgba(20, 20, 31, .7), rgba(20, 20, 31, .7)), url(../img/Veranda-Resort-_-Villas-Hua-Hin-101-1024x683.webp);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 750px;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -427,4 +438,22 @@
     margin-right: 0;
     padding-right: 0;
     border-right: none;
+}
+
+
+
+/** Teen edit **/
+
+.title-container{
+    /* border:1px solid red; */
+    width: 500px;
+    margin-left: 100px;
+}
+
+.display-3{
+    font-size: 100px;
+}
+
+.title-container p{
+    font-size: 22px;
 }
