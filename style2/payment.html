@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Alluring Hotel - Payment</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+    
+        <!-- Favico -->
+        <link href="img/favicon.ico" rel="icon">
+    
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    
+        <!-- Icon Font Stylesheet -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        
+    </head>
+    <body>
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h6 class="section-title bg-white text-center text-primary px-3">Payment</h6>
+                    <h1 class="mb-5">ระบบชำระเงิน</h1>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="package-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/kisspng-quality-bank-deposit-account-bank-of-america-clip-ancient-vector-5b067aaaea1745.7865140315271512749589.png" alt="">
+                            </div>
+                            <div class="text-center p-4">
+                                <h4>ชำระเงินผ่านธนาคาร</h4>
+                                <p>ชำระได้ที่ธนาคารทุกสาขาทั่วประเทศไทย</p>
+                                <button class="cool-button" onclick="openModal()">Pay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="package-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/—Pngtree—vector atm card icon_4184308.png" alt="">
+                            </div>
+                            
+                            <div class="text-center p-4">
+                                <h4>บัตรเครดิต</h4>
+                                <p>Mastercard, Visa</p>
+                                <button class="cool-button" onclick="openModal()">Pay</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="package-item">
+                            <div class="overflow-hidden">
+                                <img class="img-fluid" src="img/6d77c22b-20ed-4af7-ba18-408b03b9b967.jpg" alt="">
+                            </div>
+                            <div class="text-center p-4">
+                                <h4>ชำระเงินผ่าน QR-Code</h4>
+                                <p>สแกนจ่ายแล้วส่งสลิปด้วยครับ/ค่ะ</p>
+                                <button class="cool-button" onclick="openModal()">Pay</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+        <div id="paymentModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h4>Confirm Payment</h4>
+                <p>ข้อกำหนดและเงื่อนไขทั่วไป
+                    การชำระเงินมัดจำล่วงหน้าจะถูกเรียกเก็บในขณะทำการจอง
+                    การจองทั้งหมดต้องได้รับการรับประกันด้วยบัตรเครดิตที่ถูกต้อง
+                    เราขอสงวนสิทธิ์ในการยกเลิกหรือแก้ไขการจองหากปรากฏว่าแขกได้มีส่วนร่วมในกิจกรรมที่ฉ้อโกงหรือไม่เหมาะสมหรือภายใต้สถานการณ์อื่น ๆ ที่ปรากฏว่าการจองมีหรือเป็นผลมาจากข้อผิดพลาดหรือข้อผิดพลาด
+                    การแก้ไขหรือการยกเลิกจะต้องแจ้งเป็นลายลักษณ์อักษรไปยังอีเมลหรือแบบฟอร์มติดต่อที่ให้ไว้ในเว็บไซต์
+                    อัตราดอกเบี้ยจะคิดตามสกุลเงินบาทไทย ดังนั้น จำนวนเงินที่แสดงในใบแจ้งยอดรายเดือนในสกุลเงินอื่นที่บริษัทบัตรเครดิตส่งให้คุณอาจแตกต่างจากราคาที่เราเสนอเล็กน้อยเนื่องจากอัตราแลกเปลี่ยนที่มีการเปลี่ยนแปลง
+                    นโยบายเด็ก:
+                    เด็กอายุ 0 - 4 ปี พักเตียงเดียวกับผู้ปกครองไม่เสียค่าใช้จ่าย
+                    เด็กอายุ 5 - 11 ปี พักเตียงเดียวกับผู้ปกครอง ต้องชำระค่าอาหารเช้า 460 บาทสุทธิต่อเด็กต่อวัน
+                    เตียงเสริม – สามารถขอเตียงเสริมได้สูงสุด 1 เตียงต่อห้อง โดยคิดค่าเตียงเสริม 1,500 บาท/ท่าน/ห้อง ต่อคืน รวมอาหารเช้า
+                    เตียงเด็กสำหรับเด็กอายุต่ำกว่า 2 ปี ให้บริการฟรีและต้องแจ้งความประสงค์ 
+                    แขกของ Veranda Resort & Villas Hua Hin Cha Am สามารถใช้บริการสถานีชาร์จรถยนต์ไฟฟ้าได้ โดยสถานีชาร์จเหล่านี้รับบัตรเครดิตและ Google Pay
+                     
+                    นโยบายของโรงแรม
+                    เวลาเช็คอิน14:00 น.
+                    เวลาเช็คเอาท์12:00 น.
+                    นโยบายเกี่ยวกับเด็ก - เด็กอายุต่ำกว่า 4 ปี พักฟรีเมื่อใช้เตียงที่มีอยู่แล้ว โดยมีบริการอาหารเช้าฟรีสำหรับเด็ก- เด็กอายุ 5-11 ปี พักฟรีเมื่อใช้เตียงที่มีอยู่แล้ว โดยมีบริการอาหารเช้าสำหรับเด็กโดยคิดค่าบริการ 460 บาทต่อมื้อ- เตียงเด็กฟรีสำหรับเด็ก 1 คน
+                    นโยบายเกี่ยวกับสัตว์เลี้ยง: - ไม่อนุญาตให้นำสัตว์เลี้ยงเข้าพัก
+                    นโยบายการสูบบุหรี่: - ห้ามสูบบุหรี่ภายในโรงแรม.
+                    </p>
+                <p>Please confirm that you have read and agree to the terms and conditions and privacy policy.</p>
+                <div>
+                    <input type="checkbox" id="termsCheckbox">
+                    <label for="termsCheckbox">ฉันได้อ่านและรองรับข้อกำหนดและเงื่อนไขและนโยบายความเป็นส่วนตัวแล้ว</label>
+                </div>
+                <br>
+                <button class="cool-button" onclick="confirmPayment()">Confirm</button>
+            </div>
+        </div>
+
+        <script>
+            function openModal() {
+                document.getElementById("paymentModal").style.display = "block";
+            }
+
+            function closeModal() {
+                document.getElementById("paymentModal").style.display = "none";
+            }
+
+            function confirmPayment() {
+                var checkbox = document.getElementById("termsCheckbox");
+                if (checkbox.checked) {
+                    alert("Payment confirmed!");
+                    closeModal();
+                } else {
+                    alert("You must agree to the terms and conditions.");
+                }
+            }
+
+            // Close the modal if user clicks outside of it
+            window.onclick = function(event) {
+                var modal = document.getElementById("paymentModal");
+                if (event.target == modal) {
+                    closeModal();
+                }
+            }
+        </script>
+    </body>
+</html>
