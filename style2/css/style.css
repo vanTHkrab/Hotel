@@ -483,3 +483,48 @@ h1{
     color: #ff0000;
     text-decoration: underline; 
 }
+
+.video-container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    }
+    
+    .video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    }
+    
+    .scroll-content {
+    position: relative;
+    height: 100vh;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    }
+    
+    .scroll-indicator {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    color: #fff;
+    z-index: 1;
+    }
+
+    .w-33 {
+        width: 33.33%; /* Ensures each image takes up 1/3 of the carousel width */
+    }
+    
+    .d-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
