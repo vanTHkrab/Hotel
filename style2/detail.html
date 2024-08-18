@@ -13,7 +13,9 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -29,87 +31,246 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .room-grid {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .room-text {
+            flex: 0 0 48%;
+        }
+
+        .room-img-container {
+            flex: 0 0 48%;
+            position: relative;
+        }
+
+        .room-img-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .carousel-caption {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 1.1rem;
+        }
+
+        .btn-book-now {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .cool-button {
+            font-family: 'Arial', sans-serif;
+            font-size: 12px;
+            color: #83786f;
+            background: linear-gradient(45deg, #e4d4bc, #f2eddd);
+            border: none;
+            border-radius: 50px;
+            padding: 12px 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .cool-button:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.15);
+            transition: all 0.3s ease;
+            border-radius: 50%;
+            z-index: -1;
+            transform: translate(-50%, -50%) scale(0);
+        }
+
+        .cool-button:hover:before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .cool-button:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
 </head>
 
 <body>
     <div id="nav-container"></div>
-    
-    <div class="container-xxl">
-        <div class="container">
-            <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
-                <h6 class="section-title bg-white text-center text-primary px-3">Hotel</h6>
-                <h1 class="mb-5">Details</h1>
-            </div>
-            <div class="row gy-5 gx-4 justify-content-center">
-                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative border border-primary pt-5 pb-4 px-4 display-block">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
-                            <i class="fa fa-globe fa-3x text-white"></i>
-                        </div>
-                        <img src="./img/delux/1M9A7463.webp" alt="" style="width: 100%;">
-                        <h5 class="mt-4">Deluxe Room</h5>
-                        <hr class="w-25 mx-auto bg-primary mb-1">
-                        <hr class="w-50 mx-auto bg-primary mt-0">
-                        <p class="mb-0  text-start">
-                            - ดีลักซ์ (ระเบียง) 2 คน 2200 บาท<br/>
-                            - พรีเมียม ดีลักซ์ (มีอ่างแช่ตัว วิวสวน) 2 คน 3200 บาท<br/>
-                            - ลักชัวรี ดีลักซ์ (มีอ่างแช่ตัว วิวสระว่ายน้ำ) 2 คน 3900 บาท<br/><br/><br/><br/><br/><br/>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
-                            <i class="fa fa-globe fa-3x text-white"></i>
-                        </div>
-                        <img src="./img/" alt="">
-                        <h5 class="mt-4">Suite Room</h5>
-                        <hr class="w-25 mx-auto bg-primary mb-1">
-                        <hr class="w-50 mx-auto bg-primary mt-0">
-                        <p class="mb-0 text-start">
-                            - พรีเมียม สวีท (มีอ่างจากุซซี่ มีทางลงสระว่ายน้ำ) 2 คน 4500 บาท<br/>
-                            - ลักชัวรี สวีท (มีอ่างจากุซซี่ มีทางลงสระว่ายน้ำ และมีสระว่ายน้ำส่วนตัวขนาดเล็ก) 2 คน 5900 บาท<br/><br/><br/><br/><br/><br/>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
-                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
-                            <i class="fa fa-globe fa-3x text-white"></i>
-                        </div>
-                        <h5 class="mt-4">Pool villa</h5>
-                        <hr class="w-25 mx-auto bg-primary mb-1">
-                        <hr class="w-50 mx-auto bg-primary mt-0">
-                        <p class="mb-0 text-start">
-                            - พูลวิลล่า 1 ห้องนอน (ส่วนตัว มีสระว่ายน้ำ) 2+ คน 6900 บาท <br/>
-                            - พูลวิลล่า 2 ห้องนอน (ส่วนตัว มีสระว่ายน้ำ) 4+ คน 8800 บาท <br/>
-                            - ลักชัวรี พูลวิลล่า 2 ห้องนอน (ส่วนตัว มีสระว่ายน้ำ อ่างจากุซซี่ โซนพักผ่อนกว้าง) 4+ คน 11500 บาท <br/>
-                            - สกาย พูลวิวล่า 1 ห้องนอน (ส่วนตัว มีสระว่ายน้ำ อ่างจากุซซี่ โซนพักผ่อนกว้าง เห็นวิวกว้าง) 2+ คน 10500 บาท
 
-                        </p>
+    <!-- Package Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Packages</h6>
+                <h1 class="mb-5" id="detail-title">รายละเอียด</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/sweet/IMG_6364.webp" alt="">
+                        </div>
+                        <!--<div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Thailand</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>-->
+                        <div class="text-center p-4">
+                            <!--<h3 class="mb-0">$139.00</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>-->
+                            <h4>Deluxe Room</h4>
+                            <p>ห้องพัก Pool Villa สัมผัสความหรูหราและความเป็นส่วนตัวสูงสุดในห้องพัก Pool Villa ที่ออกแบบมาเพื่อตอบโจทย์การพักผ่อนที่เหนือระดับ</p>
+                            <button class="cool-button">View details</button>
+                        </div>
                     </div>
                 </div>
-            </div>    
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/wila/2-Bedroom-Sky-Pool-Villa-6.webp" alt="">
+                        </div>
+                        
+                        <!--<div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Thailand</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>-->
+                        <div class="text-center p-4">
+                            <!--<h3 class="mb-0">$139.00</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>-->
+                            <h4>Suite Room</h4>
+                                <p>ห้องพัก Suite ยกระดับการพักผ่อนของคุณด้วยห้องพัก ที่ให้พื้นที่กว้างขวางและความสะดวกสบายมากกว่าห้องพักระดับ Deluxe ของเรา โดยภายในห้อง Suite</p>
+                                <button class="cool-button">View details</button>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/delux/1M9A7463.webp" alt="">
+                        </div>
+                        <!--<div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Thailand</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>3 days</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>-->
+                        <div class="text-center p-4">
+                        <h4>Pool villa</h4>
+                        <!--<h3 class="mb-0">$139.00</h3>
+                        <div class="mb-3">
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                            <small class="fa fa-star text-primary"></small>
+                        </div>-->
+                        <p>ห้องพัก Pool Villa สัมผัสความหรูหราและความเป็นส่วนตัวสูงสุดในห้องพัก Pool Villa ที่ออกแบบมาเพื่อตอบโจทย์การพักผ่อนที่เหนือระดับ</p>
+                        <button class="cool-button">View details</button>
+                        </div>
+                        <div class="text-center"></div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-        
+    <!-- Package End -->
+
+    <!-- Destination Start -->
+    <div class="container-xxl py-5 destination">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Service</h6>
+                <h1 class="mb-5">Service</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="./img/en/IMG_5697-1024x683.webp" alt="">
+                                <div class="position-absolute bottom-0 start-0 text-white p-2" style="background-color: rgba(0, 0, 0, 0.5);">Spa and Massage</div>
+                            </a>
+                        </div>      
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="./img/en/fitness-4-1024x683.webp" alt="">
+                                <div class="position-absolute bottom-0 start-0 text-white p-2" style="background-color: rgba(0, 0, 0, 0.5);">Fitness</div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="./img/en/kayak-2-1024x683.webp" alt="">
+                                <div class="position-absolute bottom-0 start-0 text-white p-2" style="background-color: rgba(0, 0, 0, 0.5);">Kayak</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="">
+                        <img class="img-fluid position-absolute w-100 h-100" src="./img/en/SEK_4805-1024x683.webp" alt="" style="object-fit: cover;">
+                        <div class="position-absolute bottom-0 start-0 text-white p-2" style="background-color: rgba(0, 0, 0, 0.5);">Dining room</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <!-- Destination Start -->
 
     <div id="footer-container"></div>
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
-
     <!-- JavaScript Libraries -->
     <div id="script-func"></div>
 
+    <!-- Bootstrap JS (needed for carousel) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="js/main.js"></script>
     <script src="js/nav.js"></script>
     <script src="js/footer.js"></script>
-
-
 </body>
 
 </html>
