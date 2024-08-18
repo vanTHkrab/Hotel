@@ -560,4 +560,44 @@ h1{
         justify-content: center;
         align-items: center;
     }
-    
+
+    /*Button*/
+        .cool-button {
+            font-family: 'Arial', sans-serif;
+            font-size: 12px;
+            color: #83786f;
+            background: linear-gradient(45deg, #e4d4bc, #f2eddd);
+            border: none;
+            border-radius: 50px;
+            padding: 12px 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .cool-button:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.15);
+            transition: all 0.3s ease;
+            border-radius: 50%;
+            z-index: -1;
+            transform: translate(-50%, -50%) scale(0);
+        }
+
+        .cool-button:hover:before {
+            transform: translate(-50%, -50%) scale(1);
+        }
+
+        .cool-button:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
