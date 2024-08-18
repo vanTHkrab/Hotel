@@ -463,6 +463,10 @@ h1{
     margin-left: 500px;
 }
 
+.footer-container{
+    background-color: #616161;
+}
+
 
 /* Teen edit end */
 
@@ -470,13 +474,23 @@ h1{
 
 .carousel-caption-right  p a{
     text-decoration: none;
-    align-content: center;
-    color: rgb(255, 255, 255);
-    padding: 1px 15px;
-    margin-left: 20px;
-    margin-bottom: 5px;
-    border-radius: 40px;
-    background-color: #d2a92f;
+    font-family: 'Arial', sans-serif;
+        font-size: 12px;
+        color: #83786f;
+        background: linear-gradient(45deg, #e4d4bc, #f2eddd);
+        border: none;
+        border-radius: 50px;
+        padding: 12px 25px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        margin-left: 25px;
+        margin-bottom: 20px;
 }
 
 .carousel-caption-right a:hover{
@@ -498,15 +512,18 @@ h1{
     bottom: 15px;
     text-align: right;
     color: #ffffff;
-    padding: 10px; /* Optional: Adds padding around the text */
+    padding: 10px;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
 }
 
+
 .carousel-item {
-    height: 400px;
+    height: 500px;
 }
 .carousel-item img {
     width: 800px;
-    height: 400px;
+    height: 500px;
     object-fit: cover; 
     margin: auto;
 }
@@ -518,7 +535,7 @@ h1{
 
 .video-container {
     position: relative;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     overflow: hidden;
     }
@@ -601,3 +618,29 @@ h1{
         box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     }
     
+
+
+    .left-container{
+        margin-left: 10px;
+        font-size: 40px;
+        background-color: transparent;
+        backdrop-filter: blur(3px);
+    }
+
+    .button-footer h4{
+        font-family: 'Arial', sans-serif;
+        font-size: 20px;
+        color: #000000;
+        background: linear-gradient(45deg, #e4d4bc, #f2eddd);
+        border: none;
+        border-radius: 50px;
+        padding: 12px 25px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
