@@ -32,10 +32,39 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        nav{
+            background-color: #343a40;
+            margin-bottom: 30px;
+        }
+        .container{
+            margin-top: 80px;
+        }
+    </style>
 </head>
 
 
 <body>
+
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mx-auto py-0">
+                    <li class="nav-item">
+                        <a href="data_check.html" class="nav-link active">จองห้องพัก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">หน้าหลัก</a>
+                    </li>
+          
+                </ul>
+            </div>
+        </nav>
+    </div>
 
 <!-- Booking Start -->
 <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -44,46 +73,52 @@
             <div class="row g-5 align-items-center">
                 <div class="col-md-6 text-white">
                     <div class="overflow-hidden text-white p-3" style="height: 250px; display: flex; align-items: center; justify-content: center; background-color: #343a40;">
-                        <img src="./img/destination-4.jpg" alt="">
+                        <img src="./img/sweet/Single_0023.webp" alt="">
                     </div>
-                    <h6 class="text-white text-uppercase">Booking</h6>
-                    <h1 class="text-white mb-4">Online Booking</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <h6 class="text-white text-uppercase"></h6>
+                    <h1 class="text-white mb-4"></h1>
+                    <p class="mb-4"> Alluring Hotel Tour with Water Activities, Drone Photos & Beach Bar | cha am, ส.ค. 19, 1 x ผู้ใช้บริการ</p>
+                    
                     <a class="btn btn-outline-light py-3 px-5 mt-2" href="">Read More</a>
                 </div>
                 
                 <div class="col-md-6">
                     
-                    <h1 class="text-white mb-4 mt-3">Book A Tour</h1>
+                    <h1 class="text-white mb-4 mt-3">ข้อมูลติดต่อ</h1>
                     <form>
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
+                                    <label for="name">ชื่อ</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <input type="email" class="form-control bg-transparent" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
+                                    <label for="email">นามสกุล</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating date" id="date3" data-target-input="nearest">
                                     <input type="text" class="form-control bg-transparent datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
-                                    <label for="datetime">Date & Time</label>
+                                    <label for="datetime">วัน/เดือน/ปีเกิด</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <select class="form-select bg-transparent" id="select1">
-                                        <option value="1">Destination 1</option>
-                                        <option value="2">Destination 2</option>
-                                        <option value="3">Destination 3</option>
+                                        <option value="1">deluxe room</option>
+                                        <option value="2">pool villa</option>
+                                        <option value="3">suite room</option>
                                     </select>
-                                    <label for="select1">Destination</label>
+                                    <label for="select1">ห้องที่จอง</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control bg-transparent" placeholder="Special Request" id="message"></textarea>
+                                    <label for="message">ที่อยู่</label>
                                 </div>
                             </div>
                             <div class="col-12">
