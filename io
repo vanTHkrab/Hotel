@@ -1,136 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <title>Tourist - Travel Agency HTML Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-
-    <style>
-        .room-grid {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-
-        .room-text {
-            flex: 0 0 48%;
-        }
-
-        .room-img-container {
-            flex: 0 0 48%;
-            position: relative;
-        }
-
-        .room-img-container img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-
-        .carousel-caption {
-            position: absolute;
-            bottom: 10px;
-            right: 10px;
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 5px 10px;
-            border-radius: 5px;
-            color: #fff;
-            font-size: 1.1rem;
-        }
-
-        .btn-book-now {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            text-align: center;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .cool-button {
-            font-family: 'Arial', sans-serif;
-            font-size: 12px;
-            color: #83786f;
-            background: linear-gradient(45deg, #e4d4bc, #f2eddd);
-            border: none;
-            border-radius: 50px;
-            padding: 12px 25px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-        }
-
-        .cool-button:before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 300%;
-            height: 300%;
-            background: rgba(255, 255, 255, 0.15);
-            transition: all 0.3s ease;
-            border-radius: 50%;
-            z-index: -1;
-            transform: translate(-50%, -50%) scale(0);
-        }
-
-        .cool-button:hover:before {
-            transform: translate(-50%, -50%) scale(1);
-        }
-
-        .cool-button:hover {
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
-
-    </style>
-</head>
-
-<body>
-    <div id="nav-container"></div>
-
-    <!-- Package Start -->
+<!-- Package Start -->
     <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                 <h6 class="section-title bg-white text-center text-primary px-3">Packages</h6>
-                <h1 class="mb-5" id="detail-title">รายละเอียด</h1>
+                <h1 class="mb-5">Awesome Packages</h1>
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -256,21 +129,45 @@
     </div>    
     <!-- Destination Start -->
 
-    <div id="footer-container"></div>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+css
+/*Button*/
+        .cool-button {
+            font-family: 'Arial', sans-serif;
+            font-size: 12px;
+            color: #83786f;
+            background: linear-gradient(45deg, #e4d4bc, #f2eddd);
+            border: none;
+            border-radius: 50px;
+            padding: 12px 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
 
-    <!-- JavaScript Libraries -->
-    <div id="script-func"></div>
+        .cool-button:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.15);
+            transition: all 0.3s ease;
+            border-radius: 50%;
+            z-index: -1;
+            transform: translate(-50%, -50%) scale(0);
+        }
 
-    <!-- Bootstrap JS (needed for carousel) -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        .cool-button:hover:before {
+            transform: translate(-50%, -50%) scale(1);
+        }
 
-    <script src="js/main.js"></script>
-    <script src="js/nav.js"></script>
-    <script src="js/footer.js"></script>
-</body>
-
-</html>
+        .cool-button:hover {
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
