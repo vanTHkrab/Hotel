@@ -459,13 +459,46 @@ h1{
     font-size: 22px;
 }
 
+.container-wrap-footer{
+    /* border:1px solid red; */
+    margin-left: 500px;
+}
+
+
+/* Teen edit end */
+
+
+
+.carousel-caption-right  p a{
+    text-decoration: none;
+    align-content: center;
+    color: rgb(255, 255, 255);
+    padding: 1px 15px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    border-radius: 40px;
+    background-color: #d2a92f;
+}
+
+.carousel-caption-right a:hover{
+    background-color: #e1cf99;
+}
+
+
+.carousel-caption-right h5{
+    color: white;
+    font-size: 50px;
+    margin: 3px 3px;
+    border-radius: 10px;
+}
+
 .carousel-caption-right {
+    font-size:30px;
     position: absolute;
     right: 15px;
     bottom: 15px;
     text-align: right;
-    color: #484749;
-    background-color: rgba(255, 255, 255, 0.5); /* Optional: Adds a background for better readability */
+    color: #ffffff;
     padding: 10px; /* Optional: Adds padding around the text */
 }
 
